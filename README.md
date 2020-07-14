@@ -4,7 +4,7 @@
 This contains example codes to retrieve geo coordinates from the APIs provided 
 by [Google](https://cloud.google.com/maps-platform/), 
 [Here](https://developer.here.com/) and 
-[ArcGIS](https://geocode.arcgis.com/arcgis/) for your data analysis.
+[ArcGIS](https://geocode.arcgis.com/arcgis/) for your data analysis.  
 
 ## Contributors
 1. [Kevin Patel](https://github.com/PatelKeviin) \(GitHub Username: PatelKeviin\)  

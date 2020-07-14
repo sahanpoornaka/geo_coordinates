@@ -138,7 +138,7 @@ if __name__ == "__main__":
         if result['address'] != '':
             print(result['address'])
             print("long = {}, lat = {}".format(result['location']['x'], result['location']['y']))
-            print("____________________________")
+            print("_____________________________")
 
 
 
