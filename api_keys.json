@@ -1,0 +1,6 @@
+{
+  "GOOGLE_API_KEY": "Get this from google",
+  "HERE_API_KEY": "Get this from Here",
+  "ARCGIS_USER": "Create a user account on ArcGIS",
+  "ARCGIS_PASSWORD": "Create a user account on ArcGIS"
+}
