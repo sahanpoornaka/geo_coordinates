@@ -54,7 +54,7 @@ def get_geo_coordinates_from_here(location_address: str, connection_params: dict
     }
 
 
-def get_geo_coordinates_from_arcgis(location_address:str, connection_params:dict):
+def get_geo_coordinates_from_arcgis(location_address: str, connection_params: dict):
     base_url = 'https://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer/findAddressCandidates'
     endpoint = f'{base_url}?f={connection_params["output_format"]}&singleLine={location_address}'
     results = requests.get(endpoint).json()
@@ -66,7 +66,7 @@ def get_geo_coordinates_from_arcgis(location_address:str, connection_params:dict
     }
 
 
-def get_geo_coordinates_from_arcgis_with_login(location_address:str, connection_params:dict):
+def get_geo_coordinates_from_arcgis_with_login(location_address: str, connection_params: dict):
     GIS("http://www.arcgis.com", connection_params['ARCGIS_USER'], connection_params['ARCGIS_PASSWORD'])
     arc_gis_loc = geocode(location_address)
     return {
@@ -76,7 +76,7 @@ def get_geo_coordinates_from_arcgis_with_login(location_address:str, connection_
     }
 
 
-def get_batch_geo_coordinates_from_arcgis_with_login(location_addresses:list, connection_params:dict):
+def get_batch_geo_coordinates_from_arcgis_with_login(location_addresses: list, connection_params: dict):
     GIS("http://www.arcgis.com", connection_params['ARCGIS_USER'], connection_params['ARCGIS_PASSWORD'])
     arc_gis_locs = batch_geocode(location_addresses)
     return arc_gis_locs

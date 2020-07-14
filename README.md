@@ -16,6 +16,9 @@ This contains example codes to retrieve geo coordinates from APIs provided by Go
 
 ## How to use
 
+The code contains examples for APIs from Google, Here and ArcGIS. In practice you might only need one service.
+Copy only the function for your preferred.   
+
 ### Code
 
 The code is in [geo_coordinates.py](./geo_coordinates.py).  
