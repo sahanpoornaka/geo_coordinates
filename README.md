@@ -1,7 +1,10 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 # Retrieving Longitudes and Latitudes from Map Service Providers  
-This contains example codes to retrieve geo coordinates from APIs provided by Google, Here and ArcGIS for your data analysis.
+This contains example codes to retrieve geo coordinates from the APIs provided 
+by [Google](https://cloud.google.com/maps-platform/), 
+[Here](https://developer.here.com/) and 
+[ArcGIS](https://geocode.arcgis.com/arcgis/) for your data analysis.
 
 ## Contributors
 1. [Kevin Patel](https://github.com/PatelKeviin) \(GitHub Username: PatelKeviin\)  
@@ -16,7 +19,7 @@ This contains example codes to retrieve geo coordinates from APIs provided by Go
 
 ## How to use
 
-The code contains examples for APIs from Google, Here and ArcGIS. In practice you might only need one service.
+The code contains examples for using the APIs from Google, Here and ArcGIS. In practice you might only need one service.
 Copy only the function for your preferred.   
 
 ### Code
