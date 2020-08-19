@@ -9,42 +9,69 @@ by [Google](https://cloud.google.com/maps-platform/),
 ## Contributors
 1. [Kevin Patel](https://github.com/PatelKeviin) \(GitHub Username: PatelKeviin\)  
     Functions:  
-    - get_geo_coordinates_from_google
-    - get_geo_coordinates_from_here
-    - get_geo_coordinates_from_arcgis          
+    - get_geo_coordinates_from_google (GeoCoordinatesGoogle)
+    - get_geo_coordinates_from_here (GeoCoordinatesHere)
+    - get_geo_coordinates_from_arcgis (GeoCoordinatesArcGIS)         
         
 1. [Khushbu Patel](https://github.com/khushbuupatel) \(GitHub Username: khushbuupatel\)
-    - get_geo_coordinates_from_arcgis_with_login
-    - get_batch_geo_coordinates_from_arcgis_with_login
+    - get_geo_coordinates_from_arcgis_with_login (GeoCoordinatesArcGIS)  
+    - get_batch_geo_coordinates_from_arcgis_with_login (GeoCoordinatesArcGIS)  
+
+### Files
+
+- ExampleRunner: 
+    Sample Code to Run the Required API
+- GeoCoordinatesGoogle:
+    File Containing Functionalities Related to Google API
+    - get_geo_coordinates_from_google
+    - get_altitude_from_google
+    - get_address_altitude_from_google
+- GeoCoordinatesHere:
+    File Containing Functionalities Related to Here API
+    - get_geo_coordinates_from_here
+- GeoCoordinatesArcGIS:
+    File Containing Functionalities Related to ArcGIS API
+    - get_geo_coordinates_from_arcgis
+- TestGeoCoordinates:
+    Test Class to Test all above Functions
+
+#### Directories
+
+- credentials:
+    Directory Containing the required Credentials for each service
+    - google_cred.json
+    - here_cred.json
+    - arcgis_cred.json
+- log:
+    Directory to keep all the logs
 
 ## How to use
 
-The code contains examples for using the APIs from Google, Here and ArcGIS. In practice you might only need one service.
+1. Setup the Required Libraries Stated in the [requirements.txt](requirements.txt) file
+2. Add the Credentials to the relevant file inside [credentials](credentials) directory
+2. [ExampleRunner.py](ExampleRunner.py) file contains examples for using the APIs from Google, Here and ArcGIS. In practice you might only need one service.
 Copy only the function for your preferred.   
-
-### Code
-
-The code is in [geo_coordinates.py](./geo_coordinates.py).  
-Check the examples given at the end of the file.
-
-Credentials are in the format given in [api_keys.json](./api_keys.json). Put your own in the `private_data` folder.
-
+3. [TestGeoCoordinates.py](TestGeoCoordinates.py) Run the all test functions inside the test class using, 
+```pytest TestGeoCoordinates.py```
+For more Information on Pytest refer [Pytest Documentation](https://docs.pytest.org/en/stable/contents.html)
 
 ### Credentials
 
 No credentials are required for the following function.
-- get_geo_coordinates_from_arcgis          
+- get_geo_coordinates_from_arcgis (GeoCoordinatesArcGIS)          
 
 For the remaining functions, the access was free for developers.   
 
 To use the following functions, you have to get API keys from the respective map service providers.
-- get_geo_coordinates_from_google
-- get_geo_coordinates_from_here  
+- get_geo_coordinates_from_google (GeoCoordinatesGoogle)
+- get_altitude_from_google (GeoCoordinatesGoogle)
+- get_address_altitude_from_google (GeoCoordinatesGoogle)
+- get_geo_coordinates_from_here (GeoCoordinatesHere)
 The API keys were free for testing when this code was developed. Hope they are still free for developers.
 
 To use the following, you have to create an account on ArcGIS.
-- get_geo_coordinates_from_arcgis_with_login
-- get_batch_geo_coordinates_from_arcgis_with_login  
+- get_geo_coordinates_from_arcgis_with_login (GeoCoordinatesArcGIS)
+- get_batch_geo_coordinates_from_arcgis_with_login (GeoCoordinatesArcGIS)
 The account was free for testing when this code was developed. Hope it is still free for developers.
    
 ## Sponsor
